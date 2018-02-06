@@ -7,6 +7,9 @@
 <ion-header>
 
     <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
         <ion-title>Cadastrar Material</ion-title>
     </ion-navbar>
 </ion-header>
@@ -14,31 +17,58 @@
 <ion-content padding>
 
     <ion-list>
-        <ion-item>
-            <span type="text">Descrição do Material: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Fornecedor: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Quantidade: </span><input type="number">
-        </ion-item>
-        <ion-item>
-            <span type="text">Número nota Fiscal: </span><input type="number">
-        </ion-item>
-        <ion-item>
-            <span type="text">Preço Unidade: </span><input type="number">
-        </ion-item>
-        <ion-item>
-            <span type="text">Preço Nota Fiscal: </span><input type="number">
-        </ion-item>
-        <ion-item>
-            <span type="text">Preço Total: </span><input type="number">
-        </ion-item>
-        <ion-item>
-            <span type="text">Data Entrada: </span><input type="date">
-        </ion-item>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Descrição do Material</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Quantidade</ion-label>
+                    <ion-input type="number"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Preço Uni</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Preço Total</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-item>
+                <ion-label stacked>Fornecedor</ion-label>
+                <ion-input type="text"></ion-input>
+            </ion-item>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Número Fiscal</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Preço Nota Fiscal</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Data Entrada</ion-label>
+                    <ion-input type="date"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
     </ion-list>
-    <button ion-button (click)="showAlert()">Cadastrar</button>
+
+    <button ion-button>Cadastrar</button>
     <button ion-button>Listar Material</button>
 </ion-content>

@@ -7,6 +7,9 @@
 <ion-header>
 
     <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
         <ion-title>Cadastrar Cliente RM</ion-title>
     </ion-navbar>
 
@@ -15,66 +18,136 @@
 
 <ion-content padding>
     <ion-list>
-        <ion-item>
-            <span type="text">Nome: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">CPF: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">RG: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="date">Data Nascimento: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Rede Social: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">CNPJ: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Cargo: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">Codigo Cliente: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Endereço: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">Número: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Complemento: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Bairro: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Cidade: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">CEP: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">UF: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">Telefone: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">E-mail: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="text">Resp.Cadastro: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="date">Data Cadastro: </span><input type="text">
-        </ion-item>
-        <ion-item>
-            <span type="number">Celular: </span><input type="text">
-        </ion-item>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Nome</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>CPF</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>RG</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Data Nascimento</ion-label>
+                    <ion-input type="date"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Razão Social</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>CNPJ</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Cargo</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Código Cliente</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Endereço</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Número</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Complemento</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Bairro</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Cidade</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>CEP</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>UF</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Telefone</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>E-mail</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Resp Cadastro</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Data Cadastro</ion-label>
+                    <ion-input type="date"></ion-input>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <ion-label stacked>Celular</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+            </ion-col>
+        </ion-row>
     </ion-list>
     <button ion-button>Cadastrar</button>
     <button ion-button>Lista Clientes</button>
