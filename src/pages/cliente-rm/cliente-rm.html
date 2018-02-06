@@ -6,13 +6,33 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>clienteRm</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Cliente Rm</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <ion-list>
 
+        <ion-item>
+            <ion-icon name="ios-mail"></ion-icon>
+            <ion-label fixed>Email</ion-label>
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label fixed>Senha</ion-label>
+            <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item>
+            <button ion-button full color="dark" (click)="showAlert()">Logar</button>
+        </ion-item>
+        <ion-item class="botoes-redes">
+            <button ion-button><ion-icon name="logo-facebook" outline></ion-icon></button>
+            <button ion-button><ion-icon name="logo-twitter" outline></ion-icon></button>
+            <button ion-button><ion-icon name="logo-instagram" outline></ion-icon></button>
+        </ion-item>
+    </ion-list>
 </ion-content>

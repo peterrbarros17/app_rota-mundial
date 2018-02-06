@@ -32,7 +32,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Cadastrar Material', component: CadastrarMaterialPage},
-      { title: 'Cadastrar ClienteRm', component: CadastrarClienteRmPage},
+      { title: 'Cadastrar Cliente Rm', component: CadastrarClienteRmPage},
       { title: 'Cadastrar Fatura', component: CadastrarfaturaPage},
       { title: 'Cliente Rm', component: ClienteRmPage},
       { title: 'Conta A Pagar', component: ContaAPagarPage},

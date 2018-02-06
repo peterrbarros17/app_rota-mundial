@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from '../home/home';
+import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the CadastrarMaterialPage page.
@@ -16,14 +15,18 @@ import { HomePage } from '../home/home';
 })
 export class CadastrarMaterialPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CadastrarMaterialPage');
   }
-
-  voltaParaHomePage(){
-    this.navCtrl.push(HomePage)
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Mensagem',
+      subTitle: 'Item Adicionado',
+      buttons: ['OK']
+    });
+    alert.present();
   }
 }

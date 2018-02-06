@@ -9,35 +9,36 @@
     <ion-navbar>
         <ion-title>Cadastrar Material</ion-title>
     </ion-navbar>
-    <button ion-button full color="dark" (click)="voltaParaHomePage()">Retornar</button>
 </ion-header>
 
 <ion-content padding>
 
     <ion-list>
-        <label type="text">Descrição do Materil: <input type="text"></label>
-        <br>
-        <br>
-        <label type="text">Fornecedo: <input type="text"></label>
-        <br>
-        <br>
-        <label type="text">Quantidade: <input type="number"></label>
-        <br>
-        <br>
-        <label type="text">Número Fiscal: <input type="number"></label>
-        <br>
-        <br>
-        <label type="text">R$ Uni: <input type="double"></label>
-        <br>
-        <br>
-        <label type="text">R$ N.Fiscal: <input type="number"></label>
-        <br>
-        <br>
-        <label type="text">R$ Total: <input type="number"></label>
-        <br>
-        <br>
-        <label type="text">Data Entrada: <input type="date"></label>
+        <ion-item>
+            <span type="text">Descrição do Material: </span><input type="text">
+        </ion-item>
+        <ion-item>
+            <span type="text">Fornecedor: </span><input type="text">
+        </ion-item>
+        <ion-item>
+            <span type="text">Quantidade: </span><input type="number">
+        </ion-item>
+        <ion-item>
+            <span type="text">Número nota Fiscal: </span><input type="number">
+        </ion-item>
+        <ion-item>
+            <span type="text">Preço Unidade: </span><input type="number">
+        </ion-item>
+        <ion-item>
+            <span type="text">Preço Nota Fiscal: </span><input type="number">
+        </ion-item>
+        <ion-item>
+            <span type="text">Preço Total: </span><input type="number">
+        </ion-item>
+        <ion-item>
+            <span type="text">Data Entrada: </span><input type="date">
+        </ion-item>
     </ion-list>
-    <button ion-button>Cadastrar</button>
+    <button ion-button (click)="showAlert()">Cadastrar</button>
     <button ion-button>Listar Material</button>
 </ion-content>
