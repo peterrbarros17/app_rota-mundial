@@ -14,6 +14,11 @@ import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angul
   templateUrl: 'cadastrar-material.html',
 })
 export class CadastrarMaterialPage {
+  
+  dados = {}
+  cadastrarMaterial() {
+    console.log(this.dados)
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }

@@ -7,7 +7,7 @@ import { CadastrarClienteRmPage } from './cadastrar-cliente-rm';
     CadastrarClienteRmPage,
   ],
   imports: [
-    IonicPageModule.forChild(CadastrarClienteRmPage),
+    IonicPageModule.forChild(CadastrarClienteRmPage)
   ],
 })
 export class CadastrarClienteRmPageModule {}

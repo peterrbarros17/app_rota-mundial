@@ -14,6 +14,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'cadastrarfatura.html',
 })
 export class CadastrarfaturaPage {
+  dados = {}
+  cadastrarFatura() {
+    console.log(this.dados)
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

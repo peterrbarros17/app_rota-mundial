@@ -15,60 +15,70 @@
 </ion-header>
 
 <ion-content padding>
-
-    <ion-list>
+    <form (ngSubmit)="cadastrarMaterial()">
+        <ion-list>
+            <ion-row>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Descrição do Material</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.descricaoDoMaterial" name="descricaoDoMaterial"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Quantidade</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.quantidade" name="quantidade"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Preço Uni</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.precoUni" name="precoUni"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Preço Total</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.precoTotal" name="precoTotal"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-item>
+                    <ion-label stacked>Fornecedor</ion-label>
+                    <ion-input type="text" [(ngModel)]="dados.fornecedor" name="fornecedor"></ion-input>
+                </ion-item>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Número Fiscal</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.numeroFiscal" name="numeroFiscal"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Preço Nota Fiscal</ion-label>
+                        <ion-input type="text" [(ngModel)]="dados.precoNotaFiscal" name="precoNotaFiscal"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Data Entrada</ion-label>
+                        <ion-input type="date" [(ngModel)]="dados.entrada" name="entrada"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-list>
         <ion-row>
             <ion-col>
                 <ion-item>
-                    <ion-label stacked>Descrição do Material</ion-label>
-                    <ion-input type="text"></ion-input>
+                    <button ion-button full type="submit">Cadastrar</button>
+                </ion-item>
+            </ion-col>
+            <ion-col>
+                <ion-item>
+                    <button ion-button full>Listar Material</button>
                 </ion-item>
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Quantidade</ion-label>
-                    <ion-input type="number"></ion-input>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Preço Uni</ion-label>
-                    <ion-input type="text"></ion-input>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Preço Total</ion-label>
-                    <ion-input type="text"></ion-input>
-                </ion-item>
-            </ion-col>
-            <ion-item>
-                <ion-label stacked>Fornecedor</ion-label>
-                <ion-input type="text"></ion-input>
-            </ion-item>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Número Fiscal</ion-label>
-                    <ion-input type="text"></ion-input>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Preço Nota Fiscal</ion-label>
-                    <ion-input type="text"></ion-input>
-                </ion-item>
-            </ion-col>
-            <ion-col>
-                <ion-item>
-                    <ion-label stacked>Data Entrada</ion-label>
-                    <ion-input type="date"></ion-input>
-                </ion-item>
-            </ion-col>
-        </ion-row>
-    </ion-list>
-
-    <button ion-button>Cadastrar</button>
-    <button ion-button>Listar Material</button>
+    </form>
 </ion-content>
